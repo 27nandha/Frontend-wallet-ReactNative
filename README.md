@@ -1,50 +1,53 @@
-# Welcome to your Expo app 👋
+# 💸 Expense Tracker App (React Native + Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A beautifully simple **Expense & Income Tracker** mobile application built with **React Native + Expo**, authenticated using **Clerk**, and connected to a **Node.js/Express backend API** hosted on Render.
 
-## Get started
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
+## 📱 Features
 
-2. Start the app
+- 🔄 Toggle between **Expense** and **Income**
+- 💰 Input **Transaction Title** and **Amount**
+- 📂 Choose from multiple **categories** (Food, Shopping, etc.)
+- 🔐 Authenticated using **Clerk**
+- ☁️ Stores transactions on a **Node.js/Express API**
+- 📦 Export as APK for Android
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🚀 Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+| Category       | Tech Used                      |
+|----------------|-------------------------------|
+| 💻 Frontend     | React Native (with Expo)       |
+| 🎨 Styling      | Custom Stylesheets, Ionicons   |
+| 🔐 Auth         | Clerk                          |
+| 📦 Build Tool   | EAS Build                      |
+| 🌐 Backend API  | Node.js, Express (Render)      |
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🛠 Installation & Usage
 
-When you're ready, run:
+### 🧑‍💻 Prerequisites
+
+- Node.js
+- Git
+- Expo CLI: `npm install -g expo-cli`
+- [Clerk account](https://clerk.dev)
+- Android Emulator or Expo Go App
+
+---
+
+### 🧪 Local Development
 
 ```bash
-npm run reset-project
-```
+# Clone the repo
+git clone https://github.com/27nandha/Frontend-wallet-ReactNative.git
+cd Frontend-wallet-ReactNative
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# Install dependencies
+npm install
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Start the Expo development server
+npx expo start

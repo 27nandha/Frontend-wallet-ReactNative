@@ -1,0 +1,17 @@
+import SafeScreen from "@/components/SafeScreen";
+import { ClerkProvider } from "@clerk/clerk-expo";
+import { tokenCache } from "@clerk/clerk-expo/token-cache";
+import { Slot } from "expo-router";
+import React from "react";
+import { StatusBar } from "expo-status-bar";
+// This is the root layout for the mobile app.
+export default function RootLayout() {
+  return (
+    <ClerkProvider tokenCache={tokenCache}>
+      <SafeScreen>
+        <Slot />
+      </SafeScreen>
+      <StatusBar  style="light"/>
+    </ClerkProvider>
+  );
+}
